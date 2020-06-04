@@ -1,0 +1,661 @@
+/*.........Body...........*/
+
+body{
+	background-color: #041226;
+	padding: 0;
+	margin: 0;
+
+}
+a{
+	text-decoration: none;
+ }
+
+a:hover{
+	   color: #acb199;
+	transition: 0.4s;
+}
+
+/*.............Some common Classes............*/
+
+.white{
+	color: white;
+}
+
+.font-sans{
+	font-family:sans-serif;
+	
+ }
+
+ .d-inline-block{
+ 	display: inline-block;
+ }
+
+ .heading{
+ 	font-size: 1.4rem;
+ 	font-family: sans-serif;
+ 	color: #dedad9;
+ }
+
+/*.................. Navigation Bar................... */
+
+
+#navigation-bar{
+	position: fixed;
+	z-index: 10;
+	background-color:#041226;
+	width:100%;
+	height:80px;
+	box-shadow: 0 0 30px #072857;
+
+}
+
+#music-logo{
+   position: absolute;
+   left:3%;
+   top:-12%;
+   cursor: pointer;
+}
+
+#music-logo img{
+	height: 90%;
+	width:120px;
+	/*margin:20px;*/
+}
+
+.search-bar{
+	position: absolute;
+	right:20%;
+	top:30%;
+}
+
+.search-bar input{
+	font-size: 1.1rem;
+	background-color: #0f223d;
+	border-radius: 0.3rem;
+	border:none;
+	padding: 8px;
+	width:370px;
+	padding-left: 32px;
+
+}
+
+.search-bar i{
+	position: absolute;
+}
+
+.bell-icon{
+	position: absolute;
+	right:10%;
+	top:35%;
+}
+
+.bell-icon i::after{
+	content:  '';
+	position: absolute;
+	border-radius: 50%;
+	height: 0.5rem;
+    width:0.5rem;
+    background-color: red;
+    margin-left:-8px;
+    margin-top:5px;
+
+
+}
+
+#bell-icon-description{
+	height:auto;
+	width:auto;
+	padding:10px;
+	border-radius: 45%;
+	transition: 0.6s ease-in-out;
+	opacity: 0;
+	background-color:#14264a;
+	margin:10px;
+
+}
+
+.bell-icon:hover > #bell-icon-description{
+
+	opacity: 1;
+}
+
+
+
+#myphoto{
+	cursor: pointer;
+	height:50px; width: 50px; margin-left: 30px;
+	position: absolute;
+	right:2%;
+	top:20%;
+}
+
+.microphone{
+	cursor: pointer;
+
+}
+
+
+
+
+/*.....................MAIN CONTENT....................*/
+
+.main-container-div{
+	width: 100%;
+	height:auto;
+	/*border:1px solid red;*/
+	margin-top: 20px;
+	margin-bottom: 45px;
+
+}
+
+.aside-container-div{
+	width: 100%;
+	height:auto;
+	/*border:1px solid red;*/
+	margin-top: 20px;
+	position: relative;
+
+	/*margin-bottom: 45px;*/
+
+}
+
+#main-container{
+	display: inline-block;
+	height:auto;
+	width:65%;
+	/*border:solid white;*/
+	margin-left:22px;
+	margin-top: 150px;
+}
+
+#aside-container{
+	position: absolute;
+	top:0;
+	display: inline-block;
+	height:100vh;
+	width:29%;
+	/*border:solid white;*/
+	margin-top: 150px;
+	margin-left:2%;
+	overflow-y: scroll;
+}
+#aside-container::-webkit-scrollbar { 
+                display: none; 
+            } 
+
+.music-photos{
+	width:33%;
+	height:250px;
+	box-shadow: 0px 0px 15px black;
+
+	
+	
+}
+
+.music-photos:hover{
+	transition: 0.3s;
+	transform: scale3d(1.1,1.1,1.3);
+	box-shadow: 0px 0px 30px grey;
+}
+
+
+/*.............Latest Release Container .............*/
+
+.onism-div{
+	position: relative;
+	/*border:1px solid white;*/
+	height:85px;
+	width:46%;
+	margin-right: 25px;
+	margin-bottom: 15px;
+	
+}
+
+
+
+.onism-img{
+	    position: absolute;
+		height:100%;
+		width:25%;
+}
+
+
+.play-icon{
+	opacity: 0;
+	position: absolute;
+	z-index: 11;
+	height: 100%;
+	width: 25%;
+	cursor: pointer;
+	/*border:1px solid white;*/
+}
+.fa-play{
+	
+	/*border:1px solid white;*/
+	color: white;
+	position: absolute;
+	top:45%;
+	left:45%;
+	z-index: 12;
+}
+
+.play-icon:hover{
+	opacity: 1;	
+
+}
+
+
+.onism-para{
+	font-weight: 600;
+	position: absolute;
+	color: white;
+	top:5%;
+	left:32%;
+
+}
+
+.onism-dropdown
+{
+	height:auto;
+	width:auto;
+	background-color: #5a5d63;
+	position: absolute;
+	right: 5%;
+	top:7%;
+	border-radius: 0.5rem;
+	opacity: 0;
+
+}
+.onism-dropdown:hover{
+	transition: 0.5s all;
+}
+
+.onism-dropdown:hover{
+	opacity: 1;
+}
+.onism-dropdown p{
+
+	text-align: center;
+	padding: 5px;
+	margin: 0;
+}
+
+
+.onism-dropdown p:hover{
+	background-color: #989da6;
+	border-radius: inherit;
+}
+
+
+/*................Popular Artists Container...............*/
+
+
+
+.artists-div{
+	height: 200px;
+	width:14%;
+	margin:11px;
+
+	
+
+}
+
+.artists-div img{
+	height: 130px;
+	width:100%;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.artists-div img:hover{
+	opacity: 0.6;
+	box-shadow: 0 0 10px white;
+
+}
+
+.artists-div p{
+	text-align: center;
+}
+
+/*................Stations Container................*/
+
+#div-1{
+	background-color: #0F163F;
+	height:150px;
+	width:100%;
+}
+
+.div-1-images{
+
+	position: relative;
+	/*border:1px solid white;*/
+	height:70%;
+	width:10%;
+
+	cursor: pointer;
+	margin:1.5%;
+}
+
+
+.div-1-images img{
+	
+	height:100%;
+	width:100%;
+	border-radius: 50%;
+	margin-bottom: 0;
+	opacity: 0.6;
+
+	
+}
+
+.div-1-images img:hover{
+	opacity: 1;
+	
+}
+
+
+.stations-img-description{
+	width:100%;
+	height:auto;
+	position: absolute;
+	top:43%;
+
+}
+
+.stations-img-description p{
+	text-align: center;
+	margin:0;
+	padding:0;
+}
+
+#div-2{
+	/*border:1px solid white;*/
+	height:auto;
+	width:100%;
+	margin-top: 15px;
+
+}
+
+.div-2-images{
+	/*border:0.2px solid white;*/
+	cursor: pointer;
+	height:150px;
+	width:31%;
+	margin:1%;
+	position: relative;
+	overflow:hidden;
+
+}
+
+.div-2-images img{
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+	
+
+
+
+}
+.div-2-images img:hover{
+	
+	transition: 0.7s all;
+	transform: scale3d(2,2,2);
+	opacity: 1;
+}
+
+
+
+.div-2-img-description{
+	height:auto;
+	width:100%;
+	position: absolute;
+	top:40%;
+}
+.div-2-img-description p{
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 0;
+
+}
+
+
+/*..............Latest English Container as well as latest Hindi Container because Both possess same property...............*/
+
+
+.latest-english-div{
+	
+	width:15%;
+	height: 160px;
+	/*border:1px solid white;*/
+	margin-right: 1.2%;
+	
+}
+
+
+.latest-english-div img{
+	width:100%;
+	height:65%;
+	cursor: pointer;
+	
+}
+
+.latest-english-div img:hover{
+	opacity: 0.7;
+	transition: 0.5s all;
+	transform: scale3d(1.1,1.1,1.2);
+}
+
+.latest-english-para{
+	display: block;
+	color:white;
+	margin-top: -1px;
+	font-family: sans-serif;
+	font-size: 0.8rem;
+	padding:0;
+
+}
+
+
+/*..............Aside Container............*/
+
+.image-description-div{
+	height: auto;
+    padding: 0;
+	margin: 10px;
+	position: absolute;
+	top:0%;
+	/*border:1px solid white;*/
+	/*height:100%;*/
+
+}
+
+.image-description-div p{
+	padding: 0;
+	margin: 0;
+}
+
+#queue-div{
+	position: relative;
+}
+
+
+.queue-dropdown{
+	border: none;
+	background-color: inherit;
+	position: absolute;
+	right:0;
+	top:35%;
+	color:#09bd93;
+}
+
+.queue-dropdown option{
+	border:none;
+   color:black;
+   padding: 5px;
+   cursor: pointer;
+}
+
+.serial-number{
+	/*border:1px solid white;*/
+	height:auto;
+	width:auto;
+	/*margin:0;*/
+	/*padding: 0;*/
+    position:absolute;
+    top:40%; 
+}
+
+.serial-number p{
+	text-align: center;
+	color:#b9c4c2;
+	font-size: 0.8rem;
+}
+.aside-container-div-img{
+	margin-left:25px;
+	height: 55px;
+	width: 55px;
+
+}
+
+.aside-container-div-img img:hover{
+	opacity: 0.6;
+	box-shadow: 0 0 10px lightgrey;
+	cursor: pointer;
+}
+
+
+
+.aside-container-div-img img{
+	height: 100%;
+	width: 100%;
+	border-radius: 0.4rem;
+
+}
+
+.fa-heart{
+	color:white;
+	position: absolute;
+	top:35%;
+	right:4%;
+}
+
+.fa-heart:hover{
+	transform: scale3d(2,2,2);
+	transition: 0.3s all;
+}
+
+
+/*.................Music Player Bar(as a Footer).................*/
+
+#player-bar{
+	width: 100%;
+	height: 73px;
+	background-color: #1e204f;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+
+}
+
+#player-bar-img-div{
+	position: absolute;
+	height:85%;
+	width:5%;
+	top:8%;
+	left:12%;
+
+}
+
+#player-bar-img-div img{
+	height: 100%;
+	width: 100%;
+	border-radius: 0.5rem;
+}
+
+#player-bar-center-div{
+	height: 100%;
+	width: 40%;
+	/*border:1px solid white;*/
+	margin: auto;
+	position: relative;
+
+}
+
+.fa-play-circle{
+	font-size: 1.8rem;
+	color: #c0c2c0;
+	position: absolute;
+	left:47%;
+	top:15%;
+
+
+}
+
+.fa-random{
+	font-size: 1rem;
+	color: #c0c2c0;
+	position: absolute;
+	left:33%;
+	top:22%;
+}
+
+.fa-step-backward{
+	font-size: 1rem;
+	color: #c0c2c0;
+	position: absolute;
+	left:40%;
+	top:22%;
+}
+
+.fa-step-forward{
+	font-size: 1rem;
+	color: #c0c2c0;
+	position: absolute;
+	left:56%;
+	top:22%;
+}
+
+i{
+	cursor: pointer;
+}
+
+#track-progress{
+	border: 1px solid #6e736e;
+	background-color: #6e736e;
+	width: 90%;
+	position: absolute;
+	top: 70%;
+	left:5%;
+}
+
+#track-progress-inside-div{
+	width: 40%;
+	border:2px solid #eb990c;
+	
+
+}
+.fa-circle{
+	color: white;
+	font-size: 0.75rem;
+	position: absolute;
+	top:-95%;
+	left:40%;
+}
+
+
+/*................Implementing a song By setting Properties of Audio Tag.................*/
+
+
+#audio-controls{
+	z-index: 5;
+	height:9px;
+	width:8px;
+	position: absolute;
+	left:48.5%;
+	top:27%;
+}
+
+
+/*...............................End.................................*/
